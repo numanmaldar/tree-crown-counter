@@ -36,7 +36,7 @@ A working, accessible tool to detect, count, and estimate the canopy area of ind
 4. Install Python dependencies:
    ```bash
    pip install -r requirements.txt
-   ---
+   
 ## ⚠️ Known Limitations (Read Before Use)
 In carbon markets, a rough tool that admits what it can't do is more valuable than a polished one that invents numbers. This tool has the following limitations:
 - **Resolution Dependency:** Accuracy is highly dependent on the Ground Sample Distance (GSD) of the input imagery. Imagery below 10cm/pixel will yield poor          results.
