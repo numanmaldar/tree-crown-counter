@@ -36,14 +36,13 @@ A working, accessible tool to detect, count, and estimate the canopy area of ind
 4. Install Python dependencies:
    ```bash
    pip install -r requirements.txt
-   
-##⚠️ Known Limitations (Read Before Use)
+   ---
+## ⚠️ Known Limitations (Read Before Use)
 In carbon markets, a rough tool that admits what it can't do is more valuable than a polished one that invents numbers. This tool has the following limitations:
-
--**Resolution Dependency**: Accuracy is highly dependent on the Ground Sample Distance (GSD) of the input imagery. Imagery below 10cm/pixel will yield poor results.
--**Area Estimation is Approximate**: Without explicit georeferencing metadata (GSD) in the uploaded image, area calculations are pixel-based estimates, not precise real-world square meters.
--**Occlusion & Overlap**: Dense canopies with heavy overlapping crowns may be undercounted, as the model detects distinct bounding boxes.
--**CPU Inference**: The live demo runs on CPU. Processing large, high-resolution tiles may take 1–3 minutes. For production, GPU acceleration is required.
+- **Resolution Dependency:** Accuracy is highly dependent on the Ground Sample Distance (GSD) of the input imagery. Imagery below 10cm/pixel will yield poor          results.
+- **Area Estimation is Approximate:** Without explicit georeferencing metadata (GSD) in the uploaded image, area calculations are pixel-based estimates, not          precise real-world square meters.
+- **Occlusion & Overlap:** Dense canopies with heavy overlapping crowns may be undercounted, as the model detects distinct bounding boxes.
+- **CPU Inference:** The live demo runs on CPU. Processing large, high-resolution tiles may take 1–3 minutes. For production, GPU acceleration is required.
 
 Built by Numan Maldar
    
